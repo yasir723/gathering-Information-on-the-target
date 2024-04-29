@@ -30,8 +30,9 @@ Bir diğer hamlemiz, JavaScript kodlarındaki yorumları da inceleyebiliriz. Bun
 Yukarıdaki resimdeki JavaScript yorumlarında yazılan kod parçasından anladığımız şu ki, get isteğiyle gönderilen herhangi bir hata parametresi, alert fonksiyonu kullanılarak kullanıcıya bir bildirim olarak gösterilir.
 
 <div align="center">
-    <img src="https://github.com/yasir723/hedef-ile-ilgili-bilgi-toplama/assets/111686779/757bb28d-34ff-4a22-97ed-389ead639fa7">
+    <img src="https://github.com/yasir723/hedef-ile-ilgili-bilgi-toplama/assets/111686779/b1a16226-e156-45a2-ac46-3ff800625ee7" width=49% >
+    <img src="https://github.com/yasir723/hedef-ile-ilgili-bilgi-toplama/assets/111686779/ee472d38-feb2-4ff7-aad3-0bbcda8b8070" width=49% >
 </div>
 <br></br>
 
-URL'ye `login.php?error=100` parametresini ekleyip Enter tuşuna bastığımızda, alert fonksiyonu aracılığıyla kullanıcıya 100 olarak bildirim gösterilecektir. Bu durumu daha sonra anlatacağımız `Erişim Saldırısı (Access Attack)`nda kullanacağız.
+URL'ye `login.php?error=100` veya `login.php?error=merhaba dünya` parametreleri ekleyip Enter tuşuna bastığımızda, alert fonksiyonu aracılığıyla kullanıcıya yazdığımız parametre `100 veya merhaba dünya` bildirim olarak gösterilecektir. Bu durumu daha sonra anlatacağımız `Erişim Saldırısı (Access Attack)`nda kullanacağız.
