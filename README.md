@@ -1,34 +1,39 @@
 # Hedef ile İlgili Bilgi Toplama Saldırısı (Gathering Information on the Target)
 
-Bir hacker'in aklına ilk gelen saldırı gerçekleştirmek için target hakkında bilgi toplamaktır, bir cihazı veya bir sistemi hacklemek istersek bu sistem hakkında bilgi edinmemiz gerek. Bir web siteesi hakkında bilgi toplamak için kullanılan yöntemlerden biri olan `Gathering Information on the Target` saldırısı. Bir web developer'ın yaptığı en yaygın hatalardan biri olan yolrumları yanlış kullanmaktır. Bildiğimiz gibi html kodunda yazılan yorumlar tarayıcıdan gözükebilir bu da biz hacker olarak web sitesi hakkında bilgi toplamak için bize bir fırsat sunar. 
+Bir hacker için ilk adım genellikle hedef hakkında bilgi toplamaktır. Bir cihazı veya sistemi hacklemek istiyorsak, öncelikle o sistem hakkında mümkün olduğunca fazla bilgi edinmemiz gerekir. Web siteleri hedef alındığında, bu bilgi toplama sürecine "Gathering Information on the Target" adı verilir.
 
-web sitesindeki yazılan yorumlara ulaşmak için `view page source` tıklayarak html kodunda (Ctrl + F) tıklayınca arama kutusunda `<!--` yazarak yazılan yorumların yerlerini tespit edebiliyoruz. web site örneğimizde uygulama yaparsak bu şekilde önemli bilgiler görebiliriz
+Bir web geliştiricinin sıkça yaptığı hatalardan biri, yorumların yanlış bir şekilde kullanılmasıdır. HTML kodunda yapılan yorumlar, tarayıcı tarafından görülebilir. Bu durum, bir hacker için web sitesi hakkında bilgi edinme fırsatı sunabilir.
 
-Tüm yorumlar işimize gelmeyebilir o yüzden değerlendirip hangisi işimize gelenleri not olarak yazıyoruz saldırı gerçekleştirirken onları kullanmak için
+Web sitelerindeki yazılan yorumlara ulaşmak için, tarayıcıda `view page source` seçeneğine tıkladıktan sonra açılan HTML kodun içinde `Ctrl + F` kısa yolu kullanarak arama kutusuna `<!--` yazarak yorumların yerlerini tespit edebiliriz. Bu yöntemle, web sitesinin kaynak kodunda yazılan yorumları kolayca bulabilir ve önemli bilgilere ulaşabiliriz.
+
+Her yorum işimize yaramayabilir, bu yüzden değerlendirip işimize gelenleri not alıyoruz. Böylece, saldırı gerçekleştirirken ihtiyacımız olan bilgilere daha kolay erişebiliriz.
+
 <div align="center">
     <h3> Önemsiz Bilgi </h3>
     <img src="https://github.com/yasir723/hedef-ile-ilgili-bilgi-toplama/assets/111686779/87feec64-fa76-4008-a259-eda57cbf655f">
 </div>
 
-Başka bir yorum satırlara baktığımızda böyle bir yorum ile karşılaşabiliriz
+Diğer yorum satırlarına baktığımızda, karşımıza böyle bir yorum çıkabilir:
 
 <div align="center">
     <h3> Önemli Bilgi </h3>
     <img src="https://github.com/yasir723/hedef-ile-ilgili-bilgi-toplama/assets/111686779/743d2623-f15d-4aef-af44-6a2eeb40bcaa">
 </div>
 
-Bu genelde developer bunu test için yazmıştır ve silmeyi unutmuştur, onu kullanarak admin yetki ile giriş yapabiliriz.
+Bu genellikle geliştiricinin test amacıyla eklediği ancak sonrasında silmeyi unuttuğu bir yorumdur. Bu yorumdaki bilgileri kullanarak yönetici yetkileriyle giriş yapabiliriz.
 
-Öte yandan Javascript kodlarındaki yorumlara da bakabiliriz `//` aratırarak bulabiliriz
+Bir diğer hamlemiz, JavaScript kodlarındaki yorumları da inceleyebiliriz. Bunları bulmak için "//" işaretini arayabiliriz. Kodun çalışıp çalışmadığını kontrol etmek için URL içinde error parametresine bir değer vererek bu durumu kontrol edebiliriz
+
 
 <div align="center">
     <img src="https://github.com/yasir723/hedef-ile-ilgili-bilgi-toplama/assets/111686779/dbfb190a-c584-4f7d-8162-d7bc4bfa19f3">
 </div>
 
-Bu yukarıdaki koddan anlayacağımız şey, get olarak error parametresiyle gönderilen her şey alert fonksiyonu kullanarak kullanıcıya bildirim olarak gösterilir. bu olay ileri anlatacağımız saldırılarda `erişim saldırı (access attack)` gerçekleşitrmek için kullanacağız. Peki bu durumu kontrol etmek için url içinde error olarak parametreye değer vererek kodun çalışıp çalışmadığını kontrol edebiliriz
+Yukarıdaki resimdeki JavaScript yorumlarında yazılan kod parçasından anladığımız şu ki, get isteğiyle gönderilen herhangi bir hata parametresi, alert fonksiyonu kullanılarak kullanıcıya bir bildirim olarak gösterilir.
 
 <div align="center">
-    <h3>URL'da ?error = 100 ekleyerek enter tıklarsak alert fonksiyonu dolayından bildirim olarak görebiliriz</h3>
     <img src="https://github.com/yasir723/hedef-ile-ilgili-bilgi-toplama/assets/111686779/757bb28d-34ff-4a22-97ed-389ead639fa7">
 </div>
 
+
+URL'ye `login.php?error=100` parametresini ekleyip Enter tuşuna bastığımızda, alert fonksiyonu aracılığıyla kullanıcıya 100 olarak bildirim gösterilecektir. Bu durumu daha sonra anlatacağımız `Erişim Saldırısı (Access Attack)`nda kullanacağız.
