@@ -22,9 +22,8 @@ Bu genellikle geliştiricinin test amacıyla eklediği ancak sonrasında silmeyi
 <br></br>
 Bir diğer hamlemiz, JavaScript kodlarındaki yorumları da inceleyebiliriz. Bunları bulmak için "//" işaretini arayabiliriz. Kodun çalışıp çalışmadığını kontrol etmek için URL içinde error parametresine bir değer vererek bu durumu kontrol edebiliriz
 
-
 <div align="center">
-    <img src="https://github.com/yasir723/hedef-ile-ilgili-bilgi-toplama/assets/111686779/dbfb190a-c584-4f7d-8162-d7bc4bfa19f3">
+    <img src="https://github.com/yasir723/hedef-ile-ilgili-bilgi-toplama/assets/111686779/31c8c97c-45ae-4b75-bba5-718b27ec0e08">
 </div>
 <br></br>
 
