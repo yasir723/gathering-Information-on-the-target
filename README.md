@@ -26,13 +26,18 @@ Bu genellikle geliştiricinin test amacıyla eklediği ancak sonrasında silmeyi
 <br></br>
 
 ## JavaScript Yorumları
-Bir diğer hamlemiz, JavaScript kodlarındaki yorumları da inceleyebiliriz. Bunları bulmak için "//" işaretini arayabiliriz. Kodun çalışıp çalışmadığını kontrol etmek için URL içinde error parametresine bir değer vererek bu durumu kontrol edebiliriz
+Bir diğer hamlemiz, JavaScript kodlarındaki yorumları da inceleyebiliriz. 
 
+### Arama Yapmak
+JavaScript kodundaki yazılan yorumları bulmak için "//" işaretini arayabiliriz. 
 <div align="center">
     <img src="https://github.com/yasir723/hedef-ile-ilgili-bilgi-toplama/assets/111686779/31c8c97c-45ae-4b75-bba5-718b27ec0e08">
 </div>
-<br></br>
 
+Kodun çalışıp çalışmadığını kontrol etmek için URL içinde error parametresine bir değer vererek bu durumu kontrol edebiliriz
+
+
+### Yorumlardan anladığımız JavaScript Komutu Çalışma Kontrolü
 Yukarıdaki resimdeki JavaScript yorumlarında yazılan kod parçasından anladığımız şu ki, get isteğiyle gönderilen herhangi bir hata parametresi, alert fonksiyonu kullanılarak kullanıcıya bir bildirim olarak gösterilir.
 
 <div align="center">
