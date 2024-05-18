@@ -2,6 +2,8 @@
 
 Bir hacker için ilk adım genellikle hedef hakkında bilgi toplamaktır. Bir cihazı veya sistemi hacklemek istiyorsak, öncelikle o sistem hakkında mümkün olduğunca fazla bilgi edinmemiz gerekir. Web siteleri hedef alındığında, bu bilgi toplama sürecine "Gathering Information on the Target" adı verilir.
 
+
+## HTML Yorumları
 Bir web geliştiricinin sıkça yaptığı hatalardan biri, yorumların yanlış bir şekilde kullanılmasıdır. HTML kodunda yapılan yorumlar, tarayıcı tarafından görülebilir. Bu durum, bir hacker için web sitesi hakkında bilgi edinme fırsatı sunabilir.
 
 Web sitelerindeki yazılan yorumlara ulaşmak için, tarayıcıda `view page source` seçeneğine tıkladıktan sonra açılan HTML kodun içinde `Ctrl + F` kısa yolu kullanarak arama kutusuna `<!--` yazarak yorumların yerlerini tespit edebiliriz. Bu yöntemle, web sitesinin kaynak kodunda yazılan yorumları kolayca bulabilir ve önemli bilgilere ulaşabiliriz.
