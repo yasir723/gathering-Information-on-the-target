@@ -10,11 +10,13 @@ Web sitelerindeki yazılan yorumlara ulaşmak için, tarayıcıda `view page sou
 
 Her yorum işimize yaramayabilir, bu yüzden değerlendirip işimize gelenleri not alıyoruz. Böylece, saldırı gerçekleştirirken ihtiyacımız olan bilgilere daha kolay erişebiliriz.
 
+### 1. Sonuç
 <div align="center">
     <img src="https://github.com/yasir723/hedef-ile-ilgili-bilgi-toplama/assets/111686779/87feec64-fa76-4008-a259-eda57cbf655f">
 </div>
 <br></br>
 
+### 2. Sonuç
 Diğer yorum satırlarına baktığımızda, karşımıza böyle bir yorum çıkabilir:
 
 <div align="center">
@@ -22,6 +24,8 @@ Diğer yorum satırlarına baktığımızda, karşımıza böyle bir yorum çık
 </div>
 Bu genellikle geliştiricinin test amacıyla eklediği ancak sonrasında silmeyi unuttuğu bir yorumdur. Bu yorumdaki bilgileri kullanarak yönetici yetkileriyle giriş yapabiliriz.
 <br></br>
+
+## JavaScript Yorumları
 Bir diğer hamlemiz, JavaScript kodlarındaki yorumları da inceleyebiliriz. Bunları bulmak için "//" işaretini arayabiliriz. Kodun çalışıp çalışmadığını kontrol etmek için URL içinde error parametresine bir değer vererek bu durumu kontrol edebiliriz
 
 <div align="center">
