@@ -37,7 +37,7 @@ JavaScript kodundaki yazılan yorumları bulmak için "//" işaretini arayabilir
 Kodun çalışıp çalışmadığını kontrol etmek için URL içinde error parametresine bir değer vererek bu durumu kontrol edebiliriz
 
 
-### Yorumlardan anladığımız JavaScript Komutu Çalışma Kontrolü
+### Yorumlar Sayesinde Bulduğumuz JavaScript Komutu Çalışma Kontrolü
 Yukarıdaki resimdeki JavaScript yorumlarında yazılan kod parçasından anladığımız şu ki, get isteğiyle gönderilen herhangi bir hata parametresi, alert fonksiyonu kullanılarak kullanıcıya bir bildirim olarak gösterilir.
 
 <div align="center">
